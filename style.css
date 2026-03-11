@@ -1,0 +1,112 @@
+/* Import DaFont custom font */
+@font-face {
+    font-family: 'Akira';
+    src: url('fonts/Akira.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('fonts/Coolvetica.otf') format('opentype');
+}
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body style */
+body {
+    font-family: 'Coolvetica', Arial, sans-serif; /* Custom DaFont applied */
+    background-color: #111; /* Black background */
+    color: #fff; /* Default text color */
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+/* Header banner */
+header {
+    background-color: #ff6600; /* Orange */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Akira', Arial, sans-serif; /* Font for headings */
+    color: #fff;
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+header h2, header h3 {
+    font-family: 'Akira', Arial, sans-serif;
+    color: #222; /* Dark on orange */
+    margin: 5px 0;
+}
+
+/* Profile image */
+.profile-img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ff6600;
+    box-shadow: 0 4px 10px rgba(255,102,0,0.6);
+    margin: 40px auto 20px auto; /* moved image slightly down */
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05); /* zoom effect */
+}
+
+/* Main content */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main p {
+    font-family: 'Coolvetica', Arial, sans-serif; /* Body text uses the font */
+    background-color: #222;
+    padding: 15px 20px;
+    border-left: 5px solid #ff6600;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: justify;
+    font-size: 30px;
+}
+
+
+
+/* Footer */
+footer {
+    font-family: 'Coolvetica', Arial, sans-serif;
+    background-color: #222;
+    color: #ff6600;
+    text-align: center;
+    padding: 15px;
+    margin-top: -10px;
+    border-top: 3px solid #ff6600;
+    font-size: 30px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+        margin-top: 20px; /* adjust for mobile */
+    }
+
+    main {
+        padding: 15px;
+    }
+}
